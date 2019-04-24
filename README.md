@@ -13,11 +13,13 @@ accounts:
     username: us3r
     password: s3cr3t
     database: foo 
+statements:
+	foostmt: "select 1"
 ```
 
 ```sqf
 private _connection = dbCreateConnection "foo";
-private _query = dbPrepareQuery "select 1";
+private _query = dbPrepareQuery "foostmt";
 private _result = _connection dbExecute _query;
 systemChat format ["xxx %1", _result];
 ```
