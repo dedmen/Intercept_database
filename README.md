@@ -14,3 +14,10 @@ accounts:
     password: s3cr3t
     database: foo 
 ```
+
+```sqf
+private _connection = dbCreateConnection "foo";
+private _query = dbPrepareQuery "select 1";
+private _result = _connection dbExecute _query;
+systemChat format ["xxx %1", _result];
+```
