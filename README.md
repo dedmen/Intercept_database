@@ -14,7 +14,7 @@ accounts:
     password: s3cr3t
     database: foo 
 statements:
-	foostmt: "select 1"
+  foostmt: "select 1"
 ```
 
 ```sqf
