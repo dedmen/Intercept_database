@@ -8,7 +8,7 @@ define MariaDB or MySQL connection parameters by creating `config.yaml` in the m
 
 ```yaml
 accounts: 
-	foo:
+  foo:
     ip: 127.0.0.1
     username: us3r
     password: s3cr3t
